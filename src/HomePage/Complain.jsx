@@ -1,4 +1,5 @@
 import React from "react";
+import { useForm } from "react-hook-form";
 
 function Complain() {
   return (
@@ -7,6 +8,7 @@ function Complain() {
         <h3 className="mb-3 text-xl tracking-wider text-white">
           Complain
         </h3>
+        <form>
         <div className="flex justify-between items-center">
           <input
             type="text"
@@ -18,7 +20,7 @@ function Complain() {
 
           <select
             id="small"
-            class="block px-5 py-3.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-orange-500 focus:orange-blue-500  dark:placeholder-gray-400 dark:text-gray-500 dark:focus:ring-orange-500 dark:focus:border-orange-500"
+            className="block px-5 py-3.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-orange-500 focus:orange-blue-500  dark:placeholder-gray-400 dark:text-gray-500 dark:focus:ring-orange-500 dark:focus:border-orange-500"
           >
             <option selected>Complain</option>
             <option value="US">United States</option>
@@ -29,7 +31,7 @@ function Complain() {
 
           <select
             id="small"
-            class="block px-5 py-3.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-orange-500 focus:orange-blue-500  dark:placeholder-gray-400 dark:text-gray-500 dark:focus:ring-orange-500 dark:focus:border-orange-500"
+            className="block px-5 py-3.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-orange-500 focus:orange-blue-500  dark:placeholder-gray-400 dark:text-gray-500 dark:focus:ring-orange-500 dark:focus:border-orange-500"
           >
             <option selected>Eye</option>
             <option value="US">United States</option>
@@ -40,7 +42,7 @@ function Complain() {
 
           <select
             id="small"
-            class="block px-5 py-3.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-orange-500 focus:orange-blue-500  dark:placeholder-gray-400 dark:text-gray-500 dark:focus:ring-orange-500 dark:focus:border-orange-500"
+            className="block px-5 py-3.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-orange-500 focus:orange-blue-500  dark:placeholder-gray-400 dark:text-gray-500 dark:focus:ring-orange-500 dark:focus:border-orange-500"
           >
             <option selected>Duration</option>
             <option value="US">United States</option>
@@ -51,7 +53,7 @@ function Complain() {
 
           <select
             id="small"
-            class="block px-5 py-3.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-orange-500 focus:orange-blue-500  dark:placeholder-gray-400 dark:text-gray-500 dark:focus:ring-orange-500 dark:focus:border-orange-500"
+            className="block px-5 py-3.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-orange-500 focus:orange-blue-500  dark:placeholder-gray-400 dark:text-gray-500 dark:focus:ring-orange-500 dark:focus:border-orange-500"
           >
             <option selected>Period</option>
             <option value="US">United States</option>
@@ -71,31 +73,32 @@ function Complain() {
           />
           <button
             type="button"
-            class="text-white bg-gradient-to-r border-white border-2 from-orange-500 via-orange-600 to-orange-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-orange-300 dark:focus:ring-orange-800 font-medium rounded-lg text-sm px-8 py-3.5 text-center "
+            className="text-white bg-gradient-to-r border-white border-2 from-orange-500 via-orange-600 to-orange-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-orange-300 dark:focus:ring-orange-800 font-medium rounded-lg text-sm px-8 py-3.5 text-center "
           >
             Add
           </button>
 
           <button
             type="button"
-            class="text-white bg-gradient-to-r border-white border-2 from-orange-500 via-orange-600 to-orange-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-orange-300 dark:focus:ring-orange-800 font-medium rounded-lg text-sm px-8 py-3.5 text-center "
+            className="text-white bg-gradient-to-r border-white border-2 from-orange-500 via-orange-600 to-orange-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-orange-300 dark:focus:ring-orange-800 font-medium rounded-lg text-sm px-8 py-3.5 text-center "
           >
             +
           </button>
 
           <button
             type="button"
-            class="text-white bg-gradient-to-r border-white border-2 from-orange-500 via-orange-600 to-orange-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-orange-300 dark:focus:ring-orange-800 font-medium rounded-lg text-sm px-8 py-3.5 text-center "
+            className="text-white bg-gradient-to-r border-white border-2 from-orange-500 via-orange-600 to-orange-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-orange-300 dark:focus:ring-orange-800 font-medium rounded-lg text-sm px-8 py-3.5 text-center "
           >
             Clear
           </button>
           <button
             type="button"
-            class="text-white bg-gradient-to-r border-white border-2 from-orange-500 via-orange-600 to-orange-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-orange-300 dark:focus:ring-orange-800 font-medium rounded-lg text-sm px-8 py-3.5 text-center "
+            className="text-white bg-gradient-to-r border-white border-2 from-orange-500 via-orange-600 to-orange-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-orange-300 dark:focus:ring-orange-800 font-medium rounded-lg text-sm px-8 py-3.5 text-center "
           >
             Clear All
           </button>
         </div>
+        </form>
       </div>
     </>
   );
