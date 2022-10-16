@@ -65,6 +65,7 @@ function PatientDetail() {
                 className="py-3 px-5 border-2 border-gray-200 rounded-lg shadow-md focus:ring-violet-300"
                 {...register("name", {
                   required: "MDN Number is required",
+                  maxLength: 10 
                 })}
                 placeholder="MDN Number"
                 id=""
@@ -96,6 +97,7 @@ function PatientDetail() {
                 className="py-3 px-5 border-2 border-gray-200 rounded-lg shadow-md focus:ring-violet-300"
                 {...register("patient_name", {
                   required: "Patient name is Required",
+                  maxLength: 32 
                 })}
                 value={filteredData.length >0 ? filteredData[0].patient_name : "" }
                 
@@ -114,6 +116,7 @@ function PatientDetail() {
               className="py-3 px-5 border-2 border-gray-200 rounded-lg shadow-md focus:ring-violet-300"
               {...register("age", {
                 required: "Patient Age is Required",
+                maxLength: 3
               })}
               placeholder="Age"
               value={filteredData.length >0 ? filteredData[0].age : "" }
